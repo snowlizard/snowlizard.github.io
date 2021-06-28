@@ -1,0 +1,16 @@
+$bright-gray: rgb(238, 238, 238);
+$gainsboro  : rgb(221, 221 ,221);
+$chinasilver: rgb(204 ,204, 204);
+$x11gray    : rgb(187, 187, 187);
+$charcoal   : rgb(51, 51, 51);
+
+#app{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $bright-gray;
+}
+
+a{
+    text-decoration: none;
+}
