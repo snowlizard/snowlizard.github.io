@@ -9,6 +9,7 @@ const Header = () =>{
             <div id="heading"><h1>Julian's  Portfolio</h1></div>
             <div id="links">
                 <div onClick={ e => history.push('/') }><NavLink activeClassName={"active"} to="/" exact={true}>Home</NavLink></div>
+                <div onClick={ e => history.push('/about') }><NavLink activeClassName={"active"} to="/about" exact={true}>About</NavLink></div>
             </div>
         </header>
     )
