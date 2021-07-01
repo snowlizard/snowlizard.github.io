@@ -2,7 +2,7 @@ import React from 'react';
 
 export const About = () => {
     return (
-        <div>
+        <div id="aMain">
             <div id="about">
                 <div className="cell" id="imgDiv">
                     <img src={window.location.origin + '/images/about.jpeg'} id="JnM"></img>
