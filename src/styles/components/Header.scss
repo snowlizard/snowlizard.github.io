@@ -20,5 +20,12 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 400px) {
+    #heading >h1 {
+        font-size: 1.5em;
+    }
+    
 }
