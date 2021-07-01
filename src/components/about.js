@@ -1,5 +1,4 @@
 import React from 'react';
-//import MnJ from '/public/images/about.jpeg';
 
 export const About = () => {
     return (

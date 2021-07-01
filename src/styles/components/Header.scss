@@ -9,9 +9,12 @@
 #heading{
     width: 70%;
     height: 100%;
+    margin-top: 5px;
 }
 #heading > h1 {
     margin-left: 5%;
+    font-family: 'rispa bold';
+    font-size:$JG;
 }
 
 #links{
@@ -21,11 +24,5 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
-}
-
-@media (max-width: 400px) {
-    #heading >h1 {
-        font-size: 1.5em;
-    }
-    
+    font-family: 'rispa';
 }

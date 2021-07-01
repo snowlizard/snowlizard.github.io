@@ -4,6 +4,8 @@ $chinasilver: rgb(204 ,204, 204);
 $x11gray    : rgb(187, 187, 187);
 $charcoal   : rgb(51, 51, 51);
 
+$JG: 2.3em;
+
 #app{
     margin: 0;
     width: 100vw;
@@ -11,6 +13,21 @@ $charcoal   : rgb(51, 51, 51);
     background-color: $bright-gray;
 }
 
-a{
+a, a:active{
     text-decoration: none;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+@font-face {
+    font-family: 'rispa bold';
+    src: url('/public/fonts/Rispa-Bold.otf');
+}
+
+@font-face {
+    font-family: 'rispa';
+    src: url('/public/fonts/Rispa-Regular.otf');
 }
