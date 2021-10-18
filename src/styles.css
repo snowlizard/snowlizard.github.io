@@ -7,7 +7,7 @@ a:active, a:visited { text-decoration: none;}
     --navbar-main: #011627;
     --navbar-items: #FDFFFC;
     --navbar-item_hover: #02223C;
-    --hover-text: #DAF9F8;
+    --hover-text: #284B63;
     --welcome:#2ec4b6;
     --projects: #FF9F1C;
   }
@@ -106,7 +106,7 @@ a:active, a:visited { text-decoration: none;}
     color: white;
   }
   .project-text:hover{
-    background: var(--navbar-items);
+    background: var(--hover-text);
   }
   
   
