@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/styles.css">
+  <title>Julian's Portfolio</title>
 </head>
 <body>
-    <div id="app"></div>
-    <script src="./bundle.js" type="text/javascript"></script>
+  <script src="https://kit.fontawesome.com/a5af45f591.js" crossorigin="anonymous"></script>
+
+<div class="wrapper">
+  <nav id="navbar">
+    <a class="nav-link" href="#welcome-section">Home</a>
+    <a class="nav-link" href="#projects">Projects</a> 
+  </nav>
+  
+  <div id="welcome-section">
+    <h1>Welcome to Anon Dev's portfolio</h1>
+    <h2>an aspiring web developer</h2>
+    
+    <div id="profile">
+      <!--Link to github-->
+      <a id="profile-link" href="https://github.com/" target="_blank">
+        <i class="fa fa-github fa-5x" id="git-icon" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+  
+  <div id="projects">
+    <!--Poject tiles go here -->
+    <div class="project-div">
+       <a class="project-tile"
+       href="https://codepen.io/snowlizard/full/dyGNaKV"
+       target="_blank">
+      <img src="https://drive.google.com/uc?id=1pJVHHqaGpHX1WnjRTU_PhJQJ7EYtcYPK" ></img>
+    </a>
+    <div class="project-text">
+      <span>Technical Document Page</span>
+    </div>
+    </div>
+  
+    <div class="project-div">
+       <a class="project-tile"
+       href="https://codepen.io/snowlizard/full/xxZVeOR"
+       target="_blank">
+      <img src="https://drive.google.com/uc?id=1zjRFDMP468UHkcN04iDUlY3OK3wE0wGT" ></img>
+    </a>
+    <div class="project-text">
+      <span>BMW page</span>
+    </div>
+    </div>
+    
+        <div class="project-div">
+       <a class="project-tile"
+       href="https://codepen.io/snowlizard/full/xxZVeOR"
+       target="_blank">
+      <img src="https://drive.google.com/uc?id=1ATJiGSXkVZE4Dla4_63xB3_T_PnhFHZN" ></img>
+    </a>
+    <div class="project-text">
+      <span>Tribute page</span>
+    </div>
+    </div>
+
+     <div class="project-div">
+       <a class="project-tile"
+        href="https://codepen.io/snowlizard/full/xxZVeOR"
+        target="_blank">
+        <img src="https://drive.google.com/uc?id=15SH0h2Wy6zo_KmnkPlauNIfHTcBXDfot" ></img>
+      </a>
+      <div class="project-text">
+        <span>Survery page</span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+  <script type="text/javscript" src="../src/app.js"></script>
 </body>
 </html>
