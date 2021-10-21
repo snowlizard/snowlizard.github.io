@@ -11,3 +11,13 @@ $(window).on('resize', () => {
     }
     
   })
+
+$('#toggle').click( () => {
+  $('ul').slideToggle(200, "linear", () => {
+
+  })
+});
+
+$('.nav-link').click( () => {
+  $('ul').slideToggle(400, "linear", () => {})
+})

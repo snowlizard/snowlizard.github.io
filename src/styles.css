@@ -1,121 +1,155 @@
 *, ul, body {
-    margin: 0;
-    padding: 0;
-    font-family:"Times New Roman, Times, serif";
-  }
+  margin: 0;
+  padding: 0;
+  font-family:"Times New Roman, Times, serif";
+  text-decoration: none;
+  list-style: none;
+}
+
 a:active, a:visited { text-decoration: none; color: #353535;}
-  :root{
-    --navbar-main: #353535;
-    --navbar-items: #d9d9d9;
-    --navbar-item_hover: #c2c2c2;
-    --hover-text: #353535;
-    --welcome:#FFFFFF;
-    --projects: #284B63;
-  }
+:root{
+  --navbar-main: #353535;
+  --navbar-items: #d9d9d9;
+  --navbar-item_hover: #c2c2c2;
+  --hover-text: #353535;
+  --welcome:#FFFFFF;
+  --projects: #284B63;
+}
   
-  .wrapper{
-    width:100%;
-    height: 100vh;
-    margin-top: 40px;
-    background: var( --welcome);
-  }
+.wrapper{
+  height: 100vh;
+  background: var( --welcome);
+}
   
-  #navbar{
-    top:0;
-    position:fixed;
-    width:100%;
-    height:40px;
-    background: var(--navbar-main);
-    display:flex;
-    justify-content: flex-end;
-    
-  }
+#navbar{
+  position:fixed;
+  width:100%;
+  height: 8%;
+  background: var(--navbar-main);
+  display:flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  text-decoration: none;
+  height:40px;
+  background: var(--navbar-items);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
   
-  .nav-link {
-    text-decoration: none;
-    display: inline-block;
-    width: 150px;
-    height:40px;
-    background: var(--navbar-items);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .nav-link:hover{
-    color: var(--hover-text);
-    background: var(--navbar-item_hover);
-  }
+.nav-link:hover{
+  color: var(--hover-text);
+  background: var(--navbar-item_hover);
+}
 
   
-  #welcome-section{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+#welcome-section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   
-  #welcome-section > h1 {
-    font-size: 4em;
-  }
+#welcome-section > h1 {
+  font-size: 4em;
+}
   
-  #welcome-section > h2 {
-    font-size: 2em;
-  }
+#welcome-section > h2 {
+  font-size: 2em;
+}
   
-  #git-icon{
-    padding-top: 50px;
-  }
+#git-icon{
+  padding-top: 50px;
+}
   
-  #projects{
-    background: var(--projects);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    
-  }
-  .project-tile{
-    width: 300px;
-    height:300px;
-  }
-  .project-tile > img {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    line-height: 300px;
-  }
-  .project-tile:hover{
-    border: 4px solid var(--navbar-items);
-    border-radius: 50%;
-  }
+#projects{
+  background: var(--projects);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  overflow: hidden;
+}
+  
+.project-tile{
+  width: 300px;
+  height:300px;
+}
+.project-tile > img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+}
+.project-tile:hover{
+  border: 4px solid var(--navbar-items);
+  border-radius: 50%;
+}
+ 
+.project-div{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+}
+  
+.project-text{
+  margin-top: 3px;
+  border-radius: 25px;
+  background: var(--navbar-item-hover);
+  padding: 8px;
+  color: white;
+}
+.project-text:hover{
+  background: var(--hover-text);
+}
   
   
-  .project-div{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-right: 50px;
+@media (max-width: 961px){
+  #welcome-section > h1{ font-size: 2em;}
+  #welcome-section > h2{ font-size: 1em;}
+  /* NAV BAR STYLING */
+  ul {
+    display: none;
+    position: fixed;
+    margin-top: 10.3em;
+    width: 50vw;
   }
-  
-  .project-text{
-    margin-top: 3px;
-    border-radius: 25px;
-    background: var(--navbar-item-hover);
-    padding: 8px;
+  .nav-link:hover{
+    background: var(--navbar-item_hover);
+  }
+  #toggle{
     color: white;
+    margin-top: 1em;
+    margin-right: 1em;
   }
-  .project-text:hover{
-    background: var(--hover-text);
+  #toggle-div{
+    position: fixed;
   }
-  
-  
-  @media (max-width: 800px){
-    #welcome-section > h1{ font-size: 2em;}
-    #welcome-section > h2{ font-size: 1em;}
+
+  #navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
-  
-  @media( max-width: 400px){
-    #welcome-section > h1 { font-size: 1.4em; }
+}
+@media (max-width:641px) {
+  ul{
+    margin-top: 9.5em;
   }
+}
+
+@media( max-width: 481px){
+  #welcome-section > h1 { font-size: 1.4em; }
+  ul{
+    margin-top: 8.3em;
+  }
+}
+
+@media (max-width:320px) {
+
+}

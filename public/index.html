@@ -9,11 +9,20 @@
 </head>
 <body>
   <script src="https://kit.fontawesome.com/a5af45f591.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <div class="wrapper">
+  <!-- NAV BAR -->
   <nav id="navbar">
-    <a class="nav-link" href="#welcome-section">Home</a>
-    <a class="nav-link" href="#projects">Projects</a> 
+    <div id="toggle-div">
+      <a href="#" id="toggle">
+        <i class="far fa-caret-square-down fa-2x"></i>
+      </a>
+    </div>
+    <ul>
+      <li><a class="nav-link" href="#welcome-section">Home</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+    </ul>
   </nav>
   
   <div id="welcome-section">
@@ -77,6 +86,6 @@
   </div>
 </div>
 
-  <script type="text/javscript" src="../src/app.js"></script>
+  <script src="../src/app.js"></script>
 </body>
 </html>
