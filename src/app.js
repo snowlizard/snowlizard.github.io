@@ -19,6 +19,9 @@ if( $(window).width() <= 800 ){
 if( $(window).width() <= 961 ){
   let navHeight = $('#navbar').height();
   $('ul').css('top', navHeight.toString() + 'px');
+  $('.nav-link').click( () => {
+    $('ul').slideToggle(200, "linear", () => {});
+  })
 }
 
 $('#toggle').click( () => {
@@ -29,7 +32,3 @@ $('#toggle').click( () => {
     return false
   }
 });
-
-$('.nav-link').click( () => {
-  $('ul').slideToggle(200, "linear", () => {});
-})
