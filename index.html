@@ -1,13 +1,93 @@
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://snowlizard.github.io/public/index.html">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="0; url=https://snowlizard.github.io/index.html">
+  <link rel="stylesheet" href="/src/styles.css">
+  <title>Julian's Portfolio</title>
 </head>
 <body>
+  <script src="https://kit.fontawesome.com/a5af45f591.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div class="wrapper">
+  <!-- NAV BAR -->
+  <nav id="navbar">
+    <div id="toggle-div">
+      <a id="toggle">
+        <i class="far fa-caret-square-down fa-2x"></i>
+      </a>
+    </div>
+    <ul>
+      <li><a class="nav-link" href="#welcome-section">Home</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+  
+  <div id="welcome-section">
+    <h1>Welcome to Julian's portfolio</h1>
+    <h2>an aspiring web developer</h2>
     
+    <div id="profile">
+      <!--Link to github-->
+      <a id="profile-link" href="https://github.com/snowlizard" target="_blank">
+        <i class="fa fa-github fa-5x" id="git-icon" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+  
+  <div id="projects">
+    <!--Poject tiles go here -->
+    <div class="project-div">
+      <a class="project-tile"
+       href="https://codepen.io/snowlizard/full/OJMKRvJ"
+       target="_blank">
+      <img src="https://drive.google.com/uc?id=1pJVHHqaGpHX1WnjRTU_PhJQJ7EYtcYPK" ></img>
+      </a>
+    <div class="project-text">
+      <div>Calculator</div>
+    </div>
+    </div>
+  
+    <div class="project-div">
+       <a class="project-tile"
+       href="https://codepen.io/snowlizard/full/eYJVrKw"
+       target="_blank">
+      <img src="https://drive.google.com/uc?id=1zjRFDMP468UHkcN04iDUlY3OK3wE0wGT" ></img>
+    </a>
+    <div class="project-text">
+      <div>Drum Machine</div>
+    </div>
+    </div>
+    
+        <div class="project-div">
+       <a class="project-tile"
+       href="https://codepen.io/snowlizard/full/xxZVeOR"
+       target="_blank">
+      <img src="https://drive.google.com/uc?id=1ATJiGSXkVZE4Dla4_63xB3_T_PnhFHZN" ></img>
+    </a>
+    <div class="project-text">
+      <div>Tribute page</div>
+    </div>
+    </div>
+
+     <div class="project-div">
+       <a class="project-tile"
+        href="https://codepen.io/snowlizard/full/xxZVeOR"
+        target="_blank">
+        <img src="https://drive.google.com/uc?id=15SH0h2Wy6zo_KmnkPlauNIfHTcBXDfot" ></img>
+      </a>
+      <div class="project-text">
+        <div>Survery page</div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+  <script src="/src/app.js"></script>
 </body>
 </html>
