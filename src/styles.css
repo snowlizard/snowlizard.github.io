@@ -56,7 +56,7 @@ a:active, a:visited { text-decoration: none; color: #353535;}
   width: 50%;
   float: left;
   height: 100%;
-  perspective: 500px;
+  perspective: 1000px;
 }
 
 .content_left{
@@ -71,10 +71,13 @@ a:active, a:visited { text-decoration: none; color: #353535;}
   transform: rotateY(180deg);
 }
 
+.left_section:hover .left_section--front{
+  visibility: hidden;
+}
+
 .left_section--front, .left_section--back{
   text-align: center;
   overflow: break-all;
-  background-color: white;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -103,7 +106,7 @@ a:active, a:visited { text-decoration: none; color: #353535;}
 #git-icon{
   padding-top: 50px;
 }
-/* --------------------- */
+/* RIGHT SECTION --------- */
 
 .right_section{
   width: 50%;
@@ -116,6 +119,37 @@ a:active, a:visited { text-decoration: none; color: #353535;}
 .icon_bar > img{
   width: 100px;
   height: 100px;
+}
+
+/* RIGHT SECTION KEY ANIMATIONS */
+
+@keyframes slideDown {
+  0% {
+      transform: translateY(-50vh);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+#html5 {
+  animation: 1.2s ease-out 0s 1 slideDown;
+}
+
+#css3{
+  animation: 1.3s ease-out 0s 1 slideDown;
+}
+
+#js{
+  animation: 1.4s ease-out 0s 1 slideDown;
+}
+
+#react{
+  animation: 1.5s ease-out 0s 1 slideDown;
+}
+
+#python{
+  animation: 1.6s ease-out 0s 1 slideDown;
 }
 
 /* PROJECT TILES */
@@ -222,12 +256,14 @@ a:active, a:visited { text-decoration: none; color: #353535;}
     width: 100%;
   }
 }
-@media (max-width:641px) {
-
-}
 
 @media( max-width: 481px){
-  #welcome-section > h1 { font-size: 1.4em; }
+  .author_name {
+    font-size: 2em;
+  }
+  .subtitle{
+    font-size: 1em;
+  }
   .project-tile{
     width: 75px;
     height: 75px;
