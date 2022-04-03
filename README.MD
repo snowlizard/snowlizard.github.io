@@ -10,8 +10,10 @@ Vista had the best looking UI.
 Since autoplay is disabled by default, you must click the page once on load  
 to hear the windows vista boot chime. Not clicking the page will not cause any  
 errors but the console will display a uncaught promise exception in relation to  
-autoplay being disabled by default.  
+autoplay being disabled by default.
 
+## On Project Status
+This project is still being worked on and being improved on.  
 
 ## Features
 >Modular Components for easy maintence and adding new features
