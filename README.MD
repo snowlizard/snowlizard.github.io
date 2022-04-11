@@ -10,10 +10,10 @@ Vista had the best looking UI.
 Since autoplay is disabled by default, you must click the page once on load  
 to hear the windows vista boot chime. Not clicking the page will not cause any  
 errors but the console will display a uncaught promise exception in relation to  
-autoplay being disabled by default.
+autoplay being disabled by default.  
 
-## On Project Status
-This project is still being worked on and being improved on.  
+#### This repository makes use of git large file storage in order
+#### for the projects to display you must run the <code> git lfs pull </code> command
 
 ## Features
 >Modular Components for easy maintence and adding new features
@@ -30,9 +30,10 @@ add desktop widgets
 ## Running the project
 Clone or download the repository
 then open a terminal and cd into the directory cd /vista_portfolio  
-run: <code>npm install</code>  
-then: <code>npm run start</code> to run the project  
-You can view the project in any web browser using the following address:  
+run: <code>npm install</code>
+<code>git lfs pull</code>
+<code>npm run start</code>
+to run the project You can view the project in any web browser using the following address:  
 <code>localhost:8080</code>   
 
 ## Adding Apps
