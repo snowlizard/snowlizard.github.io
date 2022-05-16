@@ -11,6 +11,7 @@ Since autoplay is disabled by default, you must click the page once on load
 to hear the windows vista boot chime. Not clicking the page will not cause any  
 errors but the console will display a uncaught promise exception in relation to  
 autoplay being disabled by default.  
+Due to some apps being hosted on heroku their load time may vary  
 
 #### This repository makes use of git large file storage in order
 #### for the projects to display you must run the <code> git lfs pull </code> command
