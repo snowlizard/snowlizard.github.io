@@ -1,0 +1,22 @@
+.navbar{
+    background: rgba(209, 209, 209, 0.4) !important;
+}
+.banner{
+    margin-top:-110px;
+    width: 100%;
+    height: 400px;
+}
+
+.sunset{
+    width:300px;
+    margin: 10px;
+}
+
+.about{
+    width: 500px;
+    margin: 10px;
+}
+
+.food{
+    width: 400px;
+}

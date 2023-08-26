@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="./site.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="container">
+    <!--HEADER-->
+    <header>
+        <nav class="navbar navbar-expand" style="box-shadow: 0 4px 6px -6px #222;">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand">
+                    <img src="./images/logo-3419889_1280.png" alt="logo" width="100" height="80">
+                    The Island
+                </a>
+                <div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" role="button" href="#attractions" data-bs-toggle="dropdown" aria-expanded="false">Attractions</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./food.html" class="dropdown-item active">Restaurants</a></li>
+                                <li><a href="./activities.html" class="dropdown-item">Activities</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./about.html" class="nav-link">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <img class="banner rounded mx-auto d-block" src="./images/beach-1824855.jpg" alt="sunny-beach">
+    </header>
+    <!--HEADER-->
+    <!--CONTENT-->
+    <div class="row mt-2">
+        <div class="col-lg-12 mt-2">
+            <img src="./images/pasta.jpg" alt="pasta" class="food rounded mx-auto float-start">
+            <div class="d-flex flex-wrap p-2">
+                <span class="fs-2">Sodales ut eu</span>
+                <span>Adipiscing vitae proin sagittis nisl rhoncus. Urna et pharetra pharetra massa massa ultricies. Scelerisque purus semper eget duis at tellus. Eget aliquet nibh praesent tristique magna. Sem et tortor consequat id porta nibh venenatis cras. Dictumst quisque sagittis purus sit amet volutpat consequat mauris. Eget nulla facilisi etiam dignissim. Semper risus in hendrerit gravida rutrum quisque non tellus. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Cursus turpis massa tincidunt dui ut ornare. Eget aliquet nibh praesent tristique. Dolor sed viverra ipsum nunc aliquet.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-lg-12 mt-2">
+            <img src="./images/drinks.jpg" alt="pasta" class="food rounded mx-auto float-start">
+            <div class="d-flex flex-wrap p-2">
+                <span class="fs-2">Adipiscing vitae</span>
+                <span>At quis risus sed vulputate odio ut enim blandit. A scelerisque purus semper eget. Hac habitasse platea dictumst vestibulum rhoncus est. Sollicitudin tempor id eu nisl. Purus ut faucibus pulvinar elementum integer. Sit amet volutpat consequat mauris. Pharetra sit amet aliquam id diam maecenas. Tristique et egestas quis ipsum suspendisse ultrices gravida. Vivamus at augue eget arcu dictum varius duis. In iaculis nunc sed augue lacus viverra.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-lg-12 mt-2">
+            <img src="./images/sushi.jpg" alt="pasta" class="food rounded mx-auto float-start">
+            <div class="d-flex flex-wrap p-2">
+                <span class="fs-2">Molestie nunc</span>
+                <span>Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Porttitor leo a diam sollicitudin tempor id eu. Enim ut sem viverra aliquet eget sit. Placerat in egestas erat imperdiet sed euismod nisi. Scelerisque purus semper eget duis at tellus at. Facilisis magna etiam tempor orci eu lobortis. Mi quis hendrerit dolor magna. Pharetra convallis posuere morbi leo urna molestie at elementum. Hendrerit gravida rutrum quisque non tellus orci ac auctor augue. Mauris in aliquam sem fringilla ut. Sem fringilla ut morbi tincidunt augue. In fermentum et sollicitudin ac orci phasellus egestas.</span>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTACT-->
+    <div class="row mt-2">
+        <div class="d-grid gap-2 col-8 align-items-center mx-auto mt-2">
+            <button type="button" class="btn btn-primary btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#contact">Contact Us</button>
+        </div>
+    </div>
+
+    <!--CONTACT MODAL-->
+    <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Contact form</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Email body</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    <!--CONTENT-->
+
+    <!--FOOTER-->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="./index.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none">
+                <img width="100" src="./images/logo-3419889_1280.png" alt="">
+            </a>
+            <span class="mb-3 mb-md-0">© 2023 The Island</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><i class="fa fa-brands fa-facebook fa-lg"></i></li>
+            <li class="ms-3"><i class="fa-brands fa-youtube fa-lg"></i></i></li>
+            <li class="ms-3"><i class="fa-brands fa-x-twitter fa-lg"></i></li>
+        </ul>
+    </footer>
+    <!--FOOTER-->
+</body>
+</html>
